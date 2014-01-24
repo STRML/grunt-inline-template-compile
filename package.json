@@ -1,7 +1,7 @@
 {
   "name": "grunt-inline-template-compile",
   "description": "Compile inline JS templates in your build, instead of at runtime. Great for projects that want to avoid using the CSP header 'unsafe-eval'.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/STRML/grunt-inline-template-compile",
   "author": {
     "name": "Samuel Reed",
