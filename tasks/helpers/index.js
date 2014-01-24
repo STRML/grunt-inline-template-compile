@@ -18,7 +18,7 @@ exports.transformer = function(src, fileName, options) {
     }
   });
 
-  var output = falafel(src, function(node){
+  var output = falafel(src, {loc: true}, function(node){
     if (node.type !== 'CallExpression') return;
 
     // Attempt to match.
@@ -32,7 +32,7 @@ exports.transformer = function(src, fileName, options) {
     // Ready to go, let's compile
     var src = node.arguments[0].value;
     if (typeof src !== 'string'){
-      throw new Error("Can't translate invalid template call: " + fileName + ": " + node.range);
+      throw new Error("Can't translate invalid template call: " + fileName + ": " + JSON.stringify(node.loc));
     }
 
     // Hold on to data, we'll feed it into the generated function
