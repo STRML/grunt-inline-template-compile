@@ -1,0 +1,17 @@
+{
+    "trailing"  : false,
+    "sub"       : true,
+    "laxcomma"  : true,
+    "bitwise"   : true,
+    "nonew"     : true,
+    "undef"     : true,
+    "node"      : true,
+    "eqnull"    : true,
+    "jquery"    : true,
+    "strict"    : true,
+    "quotmark"  : false,
+    "unused"    : false,
+    "devel"     : true,
+    "expr"      : true,
+    "es5"       : true
+}
